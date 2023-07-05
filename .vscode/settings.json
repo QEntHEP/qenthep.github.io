@@ -1,4 +1,7 @@
 {
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
