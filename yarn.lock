@@ -29,6 +29,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/compiler@npm:^1.5.0":
+  version: 1.5.4
+  resolution: "@astrojs/compiler@npm:1.5.4"
+  checksum: 608648fec4b81d73f61177de11e01cd1befe46e7d6f094c9fa56606c9b996b771b6607dbf69177de5570289397fe4574f8cee381d2b31434dbb7607a3947ea7b
+  languageName: node
+  linkType: hard
+
 "@astrojs/internal-helpers@npm:^0.1.1":
   version: 0.1.1
   resolution: "@astrojs/internal-helpers@npm:0.1.1"
@@ -3935,6 +3942,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-astro@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "prettier-plugin-astro@npm:0.10.0"
+  dependencies:
+    "@astrojs/compiler": ^1.5.0
+    prettier: ^2.8.8
+    sass-formatter: ^0.7.6
+  checksum: 4cb68c274dde64e42c1e2eb080ecd70c79fbcdef6ab4ba40f5d9e246ac794842d36534b82c5231d59d0536e70de1502c9f4fe9a603897a38606339868749d5e3
+  languageName: node
+  linkType: hard
+
 "prettier-plugin-astro@npm:^0.9.1":
   version: 0.9.1
   resolution: "prettier-plugin-astro@npm:0.9.1"
@@ -3947,7 +3965,62 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.3, prettier@npm:^2.8.8":
+"prettier-plugin-tailwindcss@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "prettier-plugin-tailwindcss@npm:0.3.0"
+  peerDependencies:
+    "@ianvs/prettier-plugin-sort-imports": "*"
+    "@prettier/plugin-pug": "*"
+    "@shopify/prettier-plugin-liquid": "*"
+    "@shufo/prettier-plugin-blade": "*"
+    "@trivago/prettier-plugin-sort-imports": "*"
+    prettier: ">=2.2.0"
+    prettier-plugin-astro: "*"
+    prettier-plugin-css-order: "*"
+    prettier-plugin-import-sort: "*"
+    prettier-plugin-jsdoc: "*"
+    prettier-plugin-marko: "*"
+    prettier-plugin-organize-attributes: "*"
+    prettier-plugin-organize-imports: "*"
+    prettier-plugin-style-order: "*"
+    prettier-plugin-svelte: "*"
+    prettier-plugin-twig-melody: "*"
+  peerDependenciesMeta:
+    "@ianvs/prettier-plugin-sort-imports":
+      optional: true
+    "@prettier/plugin-pug":
+      optional: true
+    "@shopify/prettier-plugin-liquid":
+      optional: true
+    "@shufo/prettier-plugin-blade":
+      optional: true
+    "@trivago/prettier-plugin-sort-imports":
+      optional: true
+    prettier-plugin-astro:
+      optional: true
+    prettier-plugin-css-order:
+      optional: true
+    prettier-plugin-import-sort:
+      optional: true
+    prettier-plugin-jsdoc:
+      optional: true
+    prettier-plugin-marko:
+      optional: true
+    prettier-plugin-organize-attributes:
+      optional: true
+    prettier-plugin-organize-imports:
+      optional: true
+    prettier-plugin-style-order:
+      optional: true
+    prettier-plugin-svelte:
+      optional: true
+    prettier-plugin-twig-melody:
+      optional: true
+  checksum: 007c09558433dac0c81d42fd9695f8ed17be56be2e446a03e2557f01ae8e26bb11945780f9afa4e6e90b861aad3fbfac6a65d381804273d5539e7d26b0a270c9
+  languageName: node
+  linkType: hard
+
+"prettier@npm:2.8.8, prettier@npm:^2.8.3, prettier@npm:^2.8.8":
   version: 2.8.8
   resolution: "prettier@npm:2.8.8"
   bin:
@@ -4246,7 +4319,11 @@ __metadata:
   dependencies:
     "@astrojs/tailwind": ^4.0.0
     astro: ^2.6.5
+    prettier: 2.8.8
+    prettier-plugin-astro: ^0.10.0
+    prettier-plugin-tailwindcss: ^0.3.0
     tailwindcss: ^3.0.24
+    typescript: ^5.1.6
   languageName: unknown
   linkType: soft
 
@@ -4298,7 +4375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-formatter@npm:^0.7.5":
+"sass-formatter@npm:^0.7.5, sass-formatter@npm:^0.7.6":
   version: 0.7.6
   resolution: "sass-formatter@npm:0.7.6"
   dependencies:
@@ -4775,7 +4852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*":
+"typescript@npm:*, typescript@npm:^5.1.6":
   version: 5.1.6
   resolution: "typescript@npm:5.1.6"
   bin:
@@ -4785,13 +4862,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@*#~builtin<compat/typescript>":
+"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.6#~builtin<compat/typescript>":
   version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=77c9e2"
+  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 21e88b0a0c0226f9cb9fd25b9626fb05b4c0f3fddac521844a13e1f30beb8f14e90bd409a9ac43c812c5946d714d6e0dee12d5d02dfc1c562c5aacfa1f49b606
+  checksum: f53bfe97f7c8b2b6d23cf572750d4e7d1e0c5fff1c36d859d0ec84556a827b8785077bc27676bf7e71fae538e517c3ecc0f37e7f593be913d884805d931bc8be
   languageName: node
   linkType: hard
 
