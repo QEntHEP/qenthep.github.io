@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/BaseLayout.astro';
+import BlogPostLink from '../components/BlogPostLink.astro';
+
+const allPosts = await getCollection('posts');
+
+const orderedPosts = allPosts.reverse();
+---
+
+<Layout title="Blog">
+	<div class="bg-white py-6 sm:py-8">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="mx-auto max-w-2xl lg:mx-0">
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Blog</h2>
+				<p class="mt-6 text-lg leading-8 text-gray-600">Learn more about our research topics.</p>
+			</div>
+			<div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+				{orderedPosts.map((post) => <BlogPostLink post={post} />)}
+			</div>
+		</div>
+	</div>
+</Layout>

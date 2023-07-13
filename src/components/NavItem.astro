@@ -1,0 +1,24 @@
+---
+interface Props {
+	text: string;
+	href: string;
+	currentPage: string;
+}
+
+const { text, href, currentPage } = Astro.props;
+
+const isActive = currentPage === href;
+---
+
+<a
+	href={href}
+	class:list={[
+		'group relative border-b-4 p-2 hover:border-white',
+		isActive ? 'border-white' : 'border-transparent',
+	]}
+>
+	<span>{text}</span>
+	<!-- <span
+		class="absolute bottom-0 left-0 -z-10 h-0 w-full bg-white group-hover:h-full group-hover:transition-all"
+	></span> -->
+</a>

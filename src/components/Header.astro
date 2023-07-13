@@ -1,0 +1,14 @@
+---
+import Navigation from '../components/Navigation.astro';
+
+const { currentPage } = Astro.props;
+---
+
+<header class="w-full bg-sky-800 text-slate-50 drop-shadow-xl">
+	<div
+		class="flex flex-col items-center px-4 sm:flex-row sm:items-start sm:justify-between lg:px-8"
+	>
+		<h1 class="py-2 text-6xl font-bold sm:text-3xl">QEntHEP</h1>
+		<Navigation currentPage={currentPage} />
+	</div>
+</header>

@@ -1,0 +1,21 @@
+---
+import NavItem from './NavItem.astro';
+
+interface Props {
+	currentPage: string;
+}
+
+const { currentPage } = Astro.props;
+
+// WARNING: Displaying the People link breaks the currentPage functionality.
+---
+
+<nav
+	class="mt-6 flex max-w-2xl space-x-8 text-sm font-semibold leading-6 sm:my-0 sm:self-end"
+	aria-label="Global"
+>
+	<NavItem text="About" href="/" currentPage={currentPage} />
+	<!-- <NavItem text="People" href="/#people" currentPage={currentPage} /> -->
+	<NavItem text="Publications" href="/publications" currentPage={currentPage} />
+	<NavItem text="Blog" href="/blog" currentPage={currentPage} />
+</nav>

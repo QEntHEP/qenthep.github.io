@@ -1,0 +1,68 @@
+---
+import { getEntry } from 'astro:content';
+
+import { Icon } from 'astro-icon/components';
+
+import Layout from './BaseLayout.astro';
+import ShareLink from '../components/ShareLink.astro';
+
+const { frontmatter } = Astro.props;
+
+const author = await getEntry(frontmatter.author);
+---
+
+<Layout title={frontmatter.title} description={frontmatter.description} frontmatter={frontmatter}>
+	<article class="min-w-min px-6 py-6 sm:py-8 lg:px-8">
+		<div class="mx-auto max-w-3xl text-base leading-7 tracking-tight text-gray-400">
+			<div class="flex items-center justify-between text-sm leading-7 tracking-tight">
+				<div>
+					Published on <span class="font-bold"
+						>{frontmatter.pubDate.toLocaleString('en', { dateStyle: 'long' })}</span
+					>
+				</div>
+				<!-- <div class="flex items-center">
+					<Icon name="heroicons:book-open-20-solid" class="mr-2 inline h-5 w-5" />
+					{frontmatter.minutesRead}
+				</div> -->
+			</div>
+			<h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				{frontmatter.title}
+			</h1>
+			<div class="mt-2 flex items-center justify-between text-sm leading-7 tracking-tight">
+				<div>
+					by <span class="font-bold">{author.data.name}</span>
+				</div><div class="flex items-center">
+					<Icon name="heroicons:book-open-20-solid" class="mr-2 inline h-5 w-5" />
+					{frontmatter.minutesRead}
+				</div>
+			</div>
+			<p class="mt-6 text-xl leading-8">
+				{frontmatter.description}
+			</p>
+			<div class="mt-6">
+				<img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+			</div>
+			<div class="mt-10 max-w-2xl">
+				<section
+					class="prose prose-purple mx-auto my-8 max-w-screen-lg px-4 dark:prose-invert lg:prose-xl lg:px-0"
+				>
+					<slot />
+				</section>
+			</div>
+		</div>
+		<div class="mt-6 flex w-full items-center justify-end">
+			<div class="mr-1 text-sm leading-7 tracking-tight">Share:</div>
+			<ShareLink
+				icon="heroicons:envelope-solid"
+				href="mailto:?subject=&body="
+				label="Share by E-mail"
+			/>
+			<ShareLink
+				icon="logos:twitter"
+				href="https://twitter.com/intent/tweet?url=&text="
+				label="Share on Twitter"
+			/>
+		</div>
+		<!-- <hr /> -->
+	</article>
+</Layout>
