@@ -3,7 +3,7 @@ import { getEntry } from 'astro:content';
 
 import { Icon } from 'astro-icon/components';
 
-import Layout from './BaseLayout.astro';
+import BaseLayout from './BaseLayout.astro';
 import ShareLink from '../components/ShareLink.astro';
 
 const { frontmatter } = Astro.props;
@@ -11,7 +11,11 @@ const { frontmatter } = Astro.props;
 const author = await getEntry(frontmatter.author);
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description} frontmatter={frontmatter}>
+<BaseLayout
+	title={frontmatter.title}
+	description={frontmatter.description}
+	frontmatter={frontmatter}
+>
 	<article class="min-w-min px-6 py-6 sm:py-8 lg:px-8">
 		<div class="mx-auto max-w-3xl text-base leading-7 tracking-tight text-gray-400">
 			<div class="flex items-center justify-between text-sm leading-7 tracking-tight">
@@ -65,4 +69,4 @@ const author = await getEntry(frontmatter.author);
 		</div>
 		<!-- <hr /> -->
 	</article>
-</Layout>
+</BaseLayout>
