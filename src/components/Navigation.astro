@@ -8,10 +8,7 @@ interface Props {
 const { currentPage } = Astro.props;
 ---
 
-<nav
-	class="my-2 flex space-x-8 py-2 text-sm font-semibold leading-6 sm:my-0 sm:self-end"
-	aria-label="Global"
->
+<nav class="flex space-x-8 text-sm font-semibold leading-6" aria-label="Global">
 	<NavItem text="About" href="/" currentPage={currentPage} />
 	<NavItem text="People" href="/#people" currentPage={currentPage} />
 	<NavItem text="Publications" href="/publications" currentPage={currentPage} />
