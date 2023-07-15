@@ -6,8 +6,6 @@ interface Props {
 }
 
 const { currentPage } = Astro.props;
-
-// WARNING: Displaying the People link breaks the currentPage functionality.
 ---
 
 <nav
@@ -15,7 +13,7 @@ const { currentPage } = Astro.props;
 	aria-label="Global"
 >
 	<NavItem text="About" href="/" currentPage={currentPage} />
-	<!-- <NavItem text="People" href="/#people" currentPage={currentPage} /> -->
+	<NavItem text="People" href="/#people" currentPage={currentPage} />
 	<NavItem text="Publications" href="/publications" currentPage={currentPage} />
 	<NavItem text="Blog" href="/blog" currentPage={currentPage} />
 </nav>
