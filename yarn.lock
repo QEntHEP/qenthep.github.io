@@ -1299,9 +1299,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^2.6.5":
-  version: 2.7.3
-  resolution: "astro@npm:2.7.3"
+"astro@npm:^2.8.3":
+  version: 2.8.3
+  resolution: "astro@npm:2.8.3"
   dependencies:
     "@astrojs/compiler": ^1.5.3
     "@astrojs/internal-helpers": ^0.1.1
@@ -1356,6 +1356,7 @@ __metadata:
     vfile: ^5.3.7
     vite: ^4.3.9
     vitefu: ^0.2.4
+    which-pm: ^2.0.0
     yargs-parser: ^21.1.1
     zod: ^3.20.6
   peerDependencies:
@@ -1365,7 +1366,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 0bd7ae0ec32855e4e09a9ff7c2eb1dd033b1e50a86c26a02c5e6bacfab2d9d3628e71a3d038c2eb3efee0c566f90b74c2358ec90a2a668f2106110b9edf0ca6b
+  checksum: 13a461670a775751aea289e6f2d50f142c2a0012ccaf7716c190c858d9388cccce79def17d086659643a2c3e9cb0564431e1b34571e9c5b4da91361848a4f01a
   languageName: node
   linkType: hard
 
@@ -5497,7 +5498,7 @@ __metadata:
     "@iconify-json/heroicons": ^1.1.11
     "@iconify-json/logos": ^1.1.33
     "@tailwindcss/typography": ^0.5.9
-    astro: ^2.6.5
+    astro: ^2.8.3
     astro-icon: next
     mdast-util-to-string: ^4.0.0
     prettier: 2.8.8
@@ -6481,7 +6482,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"which-pm@npm:2.0.0":
+"which-pm@npm:2.0.0, which-pm@npm:^2.0.0":
   version: 2.0.0
   resolution: "which-pm@npm:2.0.0"
   dependencies:
