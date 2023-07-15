@@ -39,6 +39,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/alpinejs@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "@astrojs/alpinejs@npm:0.2.2"
+  peerDependencies:
+    "@types/alpinejs": ^3.0.0
+    alpinejs: ^3.0.0
+  checksum: 23f4108aa0e596045bfdc320396c70e1eb5413513dec44d0a436bafa9465e1a5e244e93233e8148ee0aec4177cae26e3a17c39799f7ebc8c747b28f369e3ab1c
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler@npm:^1.0.1, @astrojs/compiler@npm:^1.4.2, @astrojs/compiler@npm:^1.5.3":
   version: 1.5.3
   resolution: "@astrojs/compiler@npm:1.5.3"
@@ -876,6 +886,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/alpinejs@npm:^3.0.0":
+  version: 3.7.2
+  resolution: "@types/alpinejs@npm:3.7.2"
+  dependencies:
+    "@vue/reactivity": ^3.2.26
+  checksum: 6f1b97863f720da808db15eef08134109f548de62309f22f3047c3927ffcf7079570bf5570e292b5473e2a6e3cca56fc21fdac24217999cfe50648298ef9ee9f
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.20.1":
   version: 7.20.1
   resolution: "@types/babel__core@npm:7.20.1"
@@ -1096,6 +1115,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/reactivity@npm:^3.2.26":
+  version: 3.3.4
+  resolution: "@vue/reactivity@npm:3.3.4"
+  dependencies:
+    "@vue/shared": 3.3.4
+  checksum: 81c3d0c587d23656a57a7a31afb51357274f6512b51baffc67cda183b2361a7e65e646029c26a8bc28587f26b65bba808dcd93cdd3bacab48d2b99d11ad0ec97
+  languageName: node
+  linkType: hard
+
+"@vue/reactivity@npm:~3.1.1":
+  version: 3.1.5
+  resolution: "@vue/reactivity@npm:3.1.5"
+  dependencies:
+    "@vue/shared": 3.1.5
+  checksum: b7dfcaa30aacd658502ce9373d4343d3607486796fbaae28d4ac4ab955cec766c8c6a34cb422965b21154b6319e467c54259cd6da2d9b2687501cd9e36f4197c
+  languageName: node
+  linkType: hard
+
+"@vue/shared@npm:3.1.5":
+  version: 3.1.5
+  resolution: "@vue/shared@npm:3.1.5"
+  checksum: a34b942e1aeed5d2b0fe887d0804061d2e799ef9a0d641aaae368c6fa9e2bf311e415f02883f26963bd35d90cac165433cfe74360f7ee88304fccaa144422d83
+  languageName: node
+  linkType: hard
+
+"@vue/shared@npm:3.3.4":
+  version: 3.3.4
+  resolution: "@vue/shared@npm:3.3.4"
+  checksum: 12fe53ff816bfa29ea53f89212067a86512c626b8d30149ff28b36705820f6150e1fb4e4e46897ad9eddb1d1cfc02d8941053939910eed69a905f7a5509baabe
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -1157,6 +1208,15 @@ __metadata:
     clean-stack: ^2.0.0
     indent-string: ^4.0.0
   checksum: 1101a33f21baa27a2fa8e04b698271e64616b886795fd43c31068c07533c7b3facfcaf4e9e0cab3624bd88f729a592f1c901a1a229c9e490eafce411a8644b79
+  languageName: node
+  linkType: hard
+
+"alpinejs@npm:^3.0.0":
+  version: 3.12.3
+  resolution: "alpinejs@npm:3.12.3"
+  dependencies:
+    "@vue/reactivity": ~3.1.1
+  checksum: 761649ffc0710567be28a520b67f42b58a2b765d70271cd7fa5884411b0c774fde74c43e8065c97b0069bb03fe7c6cd076a9ce91afeef36d6931eef4414f6530
   languageName: node
   linkType: hard
 
@@ -5501,12 +5561,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@astrojs/alpinejs": ^0.2.2
     "@astrojs/mdx": ^0.19.7
     "@astrojs/tailwind": ^4.0.0
     "@iconify-json/academicons": ^1.1.9
     "@iconify-json/heroicons": ^1.1.11
     "@iconify-json/logos": ^1.1.33
     "@tailwindcss/typography": ^0.5.9
+    "@types/alpinejs": ^3.0.0
+    alpinejs: ^3.0.0
     astro: ^2.8.3
     astro-icon: next
     mdast-util-to-string: ^4.0.0
