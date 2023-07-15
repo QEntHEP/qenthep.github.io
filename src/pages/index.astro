@@ -102,10 +102,13 @@ const selectedPublications = publications.filter((publication) => publication.se
 					</h2>
 					<a
 						href="/publications"
-						class="ease inline-flex items-center border border-sky-800 bg-sky-800 p-2 text-white shadow-md ring-sky-800 transition duration-200 hover:ring-2"
+						aria-label="View all publications"
+						title="View all publications"
+						draggable="false"
+						class="ease inline-flex items-center border border-sky-800 p-2 shadow-md ring-sky-800 transition duration-200 hover:ring-2"
 					>
-						<Icon name="heroicons:document-duplicate-20-solid" class="h-5 w-5 sm:mr-1.5" />
-						<span class="hidden text-base sm:inline">View all</span>
+						<span class="">View all</span>
+						<Icon name="heroicons:arrow-right-20-solid" class="ml-1.5 h-5 w-5" />
 					</a>
 				</div>
 				<PublicationsList publications={selectedPublications} />
