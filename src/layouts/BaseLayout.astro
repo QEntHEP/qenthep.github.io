@@ -43,9 +43,7 @@ const currentPage = url.pathname;
 			)
 		}
 	</head>
-	<body
-		class="container mx-auto flex min-h-screen max-w-4xl flex-col bg-slate-50 dark:bg-slate-800"
-	>
+	<body class="container mx-auto flex min-h-screen max-w-4xl flex-col bg-slate-50">
 		<Header currentPage={currentPage} />
 		<main class="flex-1 bg-white pb-24 text-base leading-7 text-gray-700">
 			<slot />
