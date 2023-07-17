@@ -48,4 +48,8 @@ Astro [documentation](https://docs.astro.build) and [Discord server](https://ast
 
 ### Similar projects
 
+- https://github.com/nicholasray/nray.dev
+- https://github.com/Balastrong/blog-astro
+- https://github.com/hellotham/hello-astro
+- https://github.com/thomasledoux1/website-thomas-astro
 - https://github.com/ayitinya/personal-blog
