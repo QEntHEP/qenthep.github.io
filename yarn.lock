@@ -49,7 +49,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/compiler@npm:^1.0.1, @astrojs/compiler@npm:^1.4.2, @astrojs/compiler@npm:^1.5.3":
+"@astrojs/compiler@npm:^1.0.1, @astrojs/compiler@npm:^1.4.2":
   version: 1.5.3
   resolution: "@astrojs/compiler@npm:1.5.3"
   checksum: b4b450cf578ed7d46b8b48ae5495c0a05ec0e7c0f64e2a871f50479db096ddecc18002d44f8e71fac1dd344a3b5a70c5c70cb662442a4eb7937cecb3604185b4
@@ -60,6 +60,13 @@ __metadata:
   version: 1.5.7
   resolution: "@astrojs/compiler@npm:1.5.7"
   checksum: d16437c33b9e9dd33fda7cfd9ac60ab3075dbd607a31dd6e7a8aaeb123851f47efe046240300d134172a8a541d64f1df3bdce7476207fd1325eb9ba1f000d298
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler@npm:^1.6.0":
+  version: 1.6.1
+  resolution: "@astrojs/compiler@npm:1.6.1"
+  checksum: ba13b8cf89dee7b219bdb11ad011176ce174ff2b193f3402a6747137c0e23c1ef444ebf61a12b39ba5ec79b93fdca57147dc9ba05d4325354dcd43c4fee19cd3
   languageName: node
   linkType: hard
 
@@ -638,12 +645,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/academicons@npm:^1.1.9":
-  version: 1.1.9
-  resolution: "@iconify-json/academicons@npm:1.1.9"
+"@iconify-json/academicons@npm:^1.1.10":
+  version: 1.1.10
+  resolution: "@iconify-json/academicons@npm:1.1.10"
   dependencies:
     "@iconify/types": "*"
-  checksum: 089f6ff75833d4e275430af33e896e301c8d97f0859c9cd3faf6f671e76f2a6bca2de55cd6b6e2f54f51a84d99b6c192e5623aecde0c384d64da8997a479d040
+  checksum: 31aa6a241af722b464c4870f62c2dd8450b486c0bbb3384b44e75100a67b6a61f3e813eb8e02e939c3a8a6c299915f90d73f4b1c58f8c5ccfa783741e60ad512
   languageName: node
   linkType: hard
 
@@ -886,7 +893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/alpinejs@npm:^3.0.0":
+"@types/alpinejs@npm:^3.7.2":
   version: 3.7.2
   resolution: "@types/alpinejs@npm:3.7.2"
   dependencies:
@@ -951,6 +958,13 @@ __metadata:
   dependencies:
     "@types/ms": "*"
   checksum: a9a9bb40a199e9724aa944e139a7659173a9b274798ea7efbc277cb084bc37d32fc4c00877c3496fac4fed70a23243d284adb75c00b5fdabb38a22154d18e5df
+  languageName: node
+  linkType: hard
+
+"@types/dom-view-transitions@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@types/dom-view-transitions@npm:1.0.1"
+  checksum: 0246473f485cb415e1f14a08e6a0d3ff85f29abdb2b6f7ca7f0247b2a3a7356a8fe8567a4c73b1503dc02ad92c1d9d8a373eb7b8fca9c1dad545dca57423e866
   languageName: node
   linkType: hard
 
@@ -1211,7 +1225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"alpinejs@npm:^3.0.0":
+"alpinejs@npm:^3.12.3":
   version: 3.12.3
   resolution: "alpinejs@npm:3.12.3"
   dependencies:
@@ -1348,7 +1362,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-icon@npm:next":
+"astro-icon@npm:^1.0.0-next.2":
   version: 1.0.0-next.2
   resolution: "astro-icon@npm:1.0.0-next.2"
   dependencies:
@@ -1359,11 +1373,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^2.8.3":
-  version: 2.8.3
-  resolution: "astro@npm:2.8.3"
+"astro@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "astro@npm:2.9.0"
   dependencies:
-    "@astrojs/compiler": ^1.5.3
+    "@astrojs/compiler": ^1.6.0
     "@astrojs/internal-helpers": ^0.1.1
     "@astrojs/language-server": ^1.0.0
     "@astrojs/markdown-remark": ^2.2.1
@@ -1376,6 +1390,7 @@ __metadata:
     "@babel/traverse": ^7.22.5
     "@babel/types": ^7.22.5
     "@types/babel__core": ^7.20.1
+    "@types/dom-view-transitions": ^1.0.1
     "@types/yargs-parser": ^21.0.0
     acorn: ^8.9.0
     boxen: ^6.2.1
@@ -1399,6 +1414,7 @@ __metadata:
     kleur: ^4.1.4
     magic-string: ^0.27.0
     mime: ^3.0.0
+    network-information-types: ^0.1.1
     ora: ^6.3.1
     p-limit: ^4.0.0
     path-to-regexp: ^6.2.1
@@ -1426,7 +1442,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 13a461670a775751aea289e6f2d50f142c2a0012ccaf7716c190c858d9388cccce79def17d086659643a2c3e9cb0564431e1b34571e9c5b4da91361848a4f01a
+  checksum: 2a48f9e7caad2f93388d6b57968e9a5e3624b3c18beb895d864256aad49be587086e9427813f7b9562204daee7ecc3ed457d445a85d35871b0d563f30cc19130
   languageName: node
   linkType: hard
 
@@ -4583,6 +4599,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"network-information-types@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "network-information-types@npm:0.1.1"
+  peerDependencies:
+    typescript: ">= 3.0.0"
+  checksum: 14ecc1e24b53fb6895c2920d353299a965d0501952f1e507b9fa9c1cdab7341257957b4c6d5c95e569e855c49f4c6274f69fce4ceb65983235aa7531e70dc3b6
+  languageName: node
+  linkType: hard
+
 "nlcst-to-string@npm:^3.0.0":
   version: 3.1.1
   resolution: "nlcst-to-string@npm:3.1.1"
@@ -5564,14 +5589,14 @@ __metadata:
     "@astrojs/alpinejs": ^0.2.2
     "@astrojs/mdx": ^0.19.7
     "@astrojs/tailwind": ^4.0.0
-    "@iconify-json/academicons": ^1.1.9
+    "@iconify-json/academicons": ^1.1.10
     "@iconify-json/heroicons": ^1.1.11
     "@iconify-json/logos": ^1.1.33
     "@tailwindcss/typography": ^0.5.9
-    "@types/alpinejs": ^3.0.0
-    alpinejs: ^3.0.0
-    astro: ^2.8.3
-    astro-icon: next
+    "@types/alpinejs": ^3.7.2
+    alpinejs: ^3.12.3
+    astro: ^2.9.0
+    astro-icon: ^1.0.0-next.2
     mdast-util-to-string: ^4.0.0
     prettier: 3.0.0
     prettier-plugin-astro: ^0.11.0
