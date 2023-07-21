@@ -25,6 +25,7 @@ export default defineConfig({
 	],
 	experimental: {
 		assets: true,
+		viewTransitions: true,
 	},
 	markdown: {
 		remarkPlugins: [remarkReadingTime, remarkMath, remarkEmoji],

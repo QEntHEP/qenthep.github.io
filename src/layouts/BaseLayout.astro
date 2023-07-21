@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
@@ -31,6 +33,7 @@ const currentPage = url.pathname;
 		<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 		<link rel="stylesheet" href="/fonts/inter.css" />
 		{
 			frontmatter?.extra?.includes('math') && (
