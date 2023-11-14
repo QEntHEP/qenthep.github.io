@@ -8,13 +8,14 @@ extra:
     - math
 ---
 
-<div style='text-align: right;'>
 ## Objectives
+<div style='text-align: right;'>
 1. Study the theoretical framework: Understand the theoretical foundations of quantum entanglement and its implications in particle physics, including concepts like Bell's theorem, entanglement entropy, and the holographic principle.
+</div>
 2. Quantify entanglement in particle interactions: Develop methods to quantify entanglement in high energy particle interactions, focusing on entanglement entropy of particle states and correlations between particle properties.
 3. Investigate entanglement in quantum field theory: Analyze entanglement dynamics, entanglement entropy scaling, and entanglement spectrum in quantum field theories relevant to high energy physics.
 4. Applications in fundamental physics: Identify potential implications of quantum entanglement in high energy physics, such as its role in particle interactions, quantum phase transitions, and the nature of quantum gravity. Look for experimental signatures in particle colliders or astrophysical observations.
-</div>
+
 
 
 ## Methodology
