@@ -1,6 +1,9 @@
 ---
 title: Quantum Entanglement in High Energy Physics
-summary: Quantum entanglement, a fascinating phenomenon at the heart of quantum mechanics, has gained significant interest in various fields. This scientific project aims to investigate the interplay between quantum entanglement and particle physics, specifically in the context of high energy physics. The goal is to gain deeper insights into fundamental aspects of the universe.
+summary: 
+<div style='text-align: right;'>
+Quantum entanglement, a fascinating phenomenon at the heart of quantum mechanics, has gained significant interest in various fields. This scientific project aims to investigate the interplay between quantum entanglement and particle physics, specifically in the context of high energy physics. The goal is to gain deeper insights into fundamental aspects of the universe.
+</div>
 # image:
 #     url: /img/cover.png
 extra:
