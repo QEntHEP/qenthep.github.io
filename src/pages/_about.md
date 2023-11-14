@@ -1,20 +1,21 @@
 ---
 title: Quantum Entanglement in High Energy Physics
 summary: 
-<div style='text-align: right;'>
 Quantum entanglement, a fascinating phenomenon at the heart of quantum mechanics, has gained significant interest in various fields. This scientific project aims to investigate the interplay between quantum entanglement and particle physics, specifically in the context of high energy physics. The goal is to gain deeper insights into fundamental aspects of the universe.
-</div>
 # image:
 #     url: /img/cover.png
 extra:
     - math
 ---
 
+<div style='text-align: right;'>
 ## Objectives
 1. Study the theoretical framework: Understand the theoretical foundations of quantum entanglement and its implications in particle physics, including concepts like Bell's theorem, entanglement entropy, and the holographic principle.
 2. Quantify entanglement in particle interactions: Develop methods to quantify entanglement in high energy particle interactions, focusing on entanglement entropy of particle states and correlations between particle properties.
 3. Investigate entanglement in quantum field theory: Analyze entanglement dynamics, entanglement entropy scaling, and entanglement spectrum in quantum field theories relevant to high energy physics.
 4. Applications in fundamental physics: Identify potential implications of quantum entanglement in high energy physics, such as its role in particle interactions, quantum phase transitions, and the nature of quantum gravity. Look for experimental signatures in particle colliders or astrophysical observations.
+</div>
+
 
 ## Methodology
 The project will utilize theoretical analysis, numerical simulations, and collaborations with experimentalists and theorists. Tools from quantum information theory, quantum field theory, and high energy physics will be employed. Numerical simulations using methods like lattice field theory or tensor network techniques may be used to investigate specific models or systems.
