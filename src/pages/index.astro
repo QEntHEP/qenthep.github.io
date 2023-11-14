@@ -60,13 +60,13 @@ const selectedPublications = publications.filter((publication) => publication.se
 				</div>
 			)
 		}
-		<div class="mt-10 max-w-2xl">
+		<div class="mt-160 max-w-2xl">
 			<section class="prose prose-sky mx-auto my-8 max-w-screen-lg lg:prose-xl">
 				<AboutSection />
 			</section>
 		</div>
 	</div>
-	<section class="mx-auto mt-16 px-6 py-6 sm:py-8 lg:px-8" id="people">
+	<section class="mx-auto mt-0.1 px-6 py-6 sm:py-8 lg:px-8" id="people">
 		<h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Research team</h2>
 		<ul role="list" class="mt-6 list-inside list-disc marker:text-sky-800">
 			{
@@ -80,7 +80,7 @@ const selectedPublications = publications.filter((publication) => publication.se
 	</section>
 	{
 		past_members && (
-			<section class="mx-auto mt-16 px-6 py-6 sm:py-8 lg:px-8">
+			<section class="mx-auto mt-0.1 px-6 py-6 sm:py-8 lg:px-8">
 				<h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Past members</h3>
 
 				<ul role="list" class="mt-6 list-inside list-disc marker:text-sky-800">
@@ -95,7 +95,7 @@ const selectedPublications = publications.filter((publication) => publication.se
 	}
 	{
 		selectedPublications && (
-			<section class="mx-auto mt-16 px-6 py-6 sm:py-8 lg:px-8">
+			<section class="mx-auto mt-0.1 px-6 py-6 sm:py-8 lg:px-8">
 				<div class="flex items-center justify-between">
 					<h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
 						Selected publications
@@ -115,10 +115,10 @@ const selectedPublications = publications.filter((publication) => publication.se
 			</section>
 		)
 	}
-	<section class="mx-auto mt-16 px-6 py-6 sm:py-8 lg:px-8">
-		<div class="mt-16 max-w-2xl">
+	<section class="mx-auto mt-0.1 px-6 py-6 sm:py-8 lg:px-8">
+		<div class="mt-0.1 max-w-2xl">
 			<h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Funding</h2>
-			<p class="mt-6">Reference: CERN/FIS-COM/0036/2019</p>
+			<p class="mt-3">Reference: CERN/FIS-COM/0036/2019</p>
 		</div>
 		<div class="grid items-center sm:grid-cols-2">
 			<Image src={FCT_logo} alt="FCT Logo" class="object-scale-down" loading="lazy" />

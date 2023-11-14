@@ -42,7 +42,7 @@ const peopleCollection = defineCollection({
 		email: z.string().email().optional(),
 		active: z.boolean().default(true),
 		academic_position: z.enum(['PhD', 'Post Doc', 'Other']).optional(),
-		role: z.enum(['Researcher', 'Other']).optional(),
+		role: z.enum(['Researcher', 'Principal Investigator', 'Co-principal Investigator']).optional(),
 		itid: z.number().optional(),
 	}),
 });

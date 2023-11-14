@@ -15,13 +15,13 @@ const past_members = await getCollection('people', ({ data }) => {
 
 <BaseLayout title="People">
 	<section class="mx-auto mt-16 px-6 py-6 sm:py-8 lg:px-8">
-		<h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl" id="people">
+		<h2 class="" id="people">
 			Research team
 		</h2>
 		<ul role="list" class="mt-6 list-inside list-disc marker:text-sky-800">
 			{
 				current_members.map((member) => (
-					<li class=" py-2">
+					<li class="py-2">
 						<TeamMember person={member} />
 					</li>
 				))
@@ -34,7 +34,7 @@ const past_members = await getCollection('people', ({ data }) => {
 		<ul role="list" class="mt-6 list-inside list-disc marker:text-sky-800">
 			{
 				past_members.map((member) => (
-					<li class=" py-2">
+					<li class="py-2">
 						<TeamMember person={member} />
 					</li>
 				))
