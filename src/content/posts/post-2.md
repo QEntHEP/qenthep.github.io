@@ -1,58 +1,70 @@
 ---
-title: "Qubits: The Building Blocks of Quantum Computing"
-pubDate: 2023-03-03
-description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed, qui obcaecati nemo non. Blanditiis, assumenda deserunt perferendis vitae voluptatem!"
+title: "The Qubits in Virtual Particles"
+pubDate: 2022-11-10
+description: "How virtual particles - the core of fundamental interactions - have a hidden qubit structure."
 author: goncalo-quinta
 image:
-  url: /img/plots/plot1a.webp
-  alt: The plot thickens.
+  url: ""
+  alt: ""
 extra:
   - math
 draft: false
 ---
 
-## Introduction
 
-Quantum computing has emerged as a revolutionary field, promising exponential advancements in processing power and problem-solving capabilities. At the heart of this technological marvel lies the concept of qubits, the fundamental unit of information in quantum computing. In this blog post, we'll dive into the world of qubits, unravel their mysteries, and explore their potential.
+## Virtual Particles: The Essence of Quantum Field Theory
 
-## What is a Qubit?
+<div style="text-align: justify">
 
-In classical computing, bits serve as the basic units of information, representing either a 0 or a 1. On the other hand, qubits, short for quantum bits, are the quantum counterpart of classical bits. However, qubits possess unique properties due to their association with the principles of quantum mechanics. :rocket:
+The fundamental forces of Nature act on particles in complicated ways. Nevertheless, the same basic quantities are systematically manipulated in all calculations. One particularly important quantity is the so-called propagator of a particle. For a fermion, this is represented as a $4 \times 4$ matrix, of the form
 
-Unlike classical bits, which can only exist in one of two states, qubits can exist in a superposition of states, thanks to a quantum phenomenon known as superposition. This means that a qubit can simultaneously represent both 0 and 1, allowing for parallel processing and the exploration of multiple solutions simultaneously.
+$$ D_{F}(k) = \frac{1}{\sqrt{2M_k(k_0+M_k)}}\begin{pmatrix} k_0+M_k & 0 & k_3 & k_1 - i k_2 \\ 0 & k_0+M_k & k_1 + i k_2 & -k_3 \\ k_3 & k_1 -i k_2 & k_0+M_k & 0 \\ k_1 + i k_2 & -k_3 & 0 & k_0+M_k \end{pmatrix}$$
 
-![Quantum Computing](/img/plots/plot2a.webp)
+where $k^{\mu}$ is a momentum 4-vector and $M_k = \sqrt{k^2_0-k^2_1-k^2_2-k^2_3}$ is called off-shell mass. The latter mass is associated to a so-called virtual particle, as is the propagator itself. The particle is called virtual since it's mass, given my $M_k$, doesn't follow the standard energy-momentum relation $E^2 = m^2 + k^4$ discovered by Einstein. A virtual particle is usally depicted by an internal line in a special type of diagram, called Feynman diagrams, like the one in the picture below:
 
-Mathematically, a qubit can be represented as:
+![](/img/plots/MollerScattering.webp)
 
-$$
-E=mc^2
-$$
+In this case it represents an electrodynamic scattering of two electrons. 
 
-$$
-\alpha\ket{0}=\beta^2\ket{1}
-$$
+</div>
 
-Here, $\alpha$ and β are complex numbers, and |0⟩ and |1⟩ represent the basis states.
 
-Another remarkable property of qubits is entanglement. When two qubits become entangled, the state of one qubit becomes instantaneously correlated with the state of the other, regardless of the distance between them. This phenomenon enables quantum computers to perform complex computations by leveraging the interconnectedness of entangled qubits.
 
-## Harnessing the Power of Qubits
+## The Qubit Structure of Virtual Fermions
 
-Quantum computing harnesses the power of qubits to perform computations that would be infeasible or prohibitively time-consuming for classical computers. By exploiting superposition and entanglement, quantum algorithms can solve certain problems exponentially faster than their classical counterparts.
+<div style="text-align: justify">
 
-One prominent algorithm that showcases the power of qubits is Shor's algorithm. Shor's algorithm leverages quantum Fourier transform and modular exponentiation to factor large numbers—a task that poses a significant challenge for classical computers. This breakthrough algorithm has profound implications for cryptography, as it can potentially break widely used encryption methods.
+One interesting fact that has been overlooked in the literature until now is that the propagator of a fermion has the same dimensions as a $2 \times 2$ qubit state. It does not, however, satisfy the addition requirements of hermiticity and unity trace. Nevertheless, the slightly modified form can easily fix these issues:
 
-## Challenges and the Future of Qubits
+$$ \check{\rho}(k) = \left(\frac{k^2-m^2}{4k_0}\right) D_{F}(k)\gamma_0  $$
 
-While qubits hold tremendous promise, several challenges hinder the realization of large-scale, error-free quantum computers. One of the major hurdles is quantum decoherence, where qubits lose their fragile quantum states due to interaction with the environment. Scientists are actively researching methods to extend the coherence time of qubits, such as using error-correction codes and implementing fault-tolerant designs.
+The matrix $\check{\rho}(k)$ does indeed represent a well-defined density matrix, in the cases where the off-shell mass $M_k$ exceeds in value the rest mass $m$. The two qubits in $\check{\rho}(k)$ are shown to be associated to particle charge and spin, both of which can only assume 2 values for a fermion.
 
-Furthermore, scaling up the number of qubits and reducing error rates are ongoing areas of research and development. Quantum error correction techniques, like surface code, aim to mitigate errors and improve the stability of qubits. Additionally, different types of qubits, such as superconducting qubits, trapped ion qubits, and topological qubits, are being explored to find the most viable and scalable solutions.
+A particularly interesting property of $\check{\rho}(k)$ is that it can be written in the thermal form
 
-In the future, the successful development of large-scale, fault-tolerant quantum computers could revolutionize various fields, including drug discovery, optimization problems, material science, and machine learning. Quantum supremacy, the point at which quantum computers surpass the capabilities of classical computers for certain tasks, remains an exciting milestone on the horizon.
+$$ \check{\rho}(k) = \frac{e^{-\beta H}}{\textrm{Tr}[e^{-\beta H}]} $$
 
-## Conclusion
+where $r_k = E_k/k_0$ is the ratio between the off-shell and on-shell energies and
 
-Qubits form the building blocks of quantum computing, enabling unprecedented computational power and the potential to solve complex problems efficiently. Their ability to exist in superposition and entanglement opens up new frontiers in information processing and algorithmic development. While challenges persist, the ongoing research and advancements in qubit technology pave the way for a quantum revolution that could reshape our understanding of computing and lead to groundbreaking discoveries.
+$$ \beta = \frac{1}{2k_0}\log\left(\frac{1+r_k}{1-r_k}\right) $$
 
-*Remember to stay tuned for future blog posts as we dive deeper into the exciting world of quantum computing!*
+is the inverse temperature of the quantum state. In other words, virtual particles have a temperature.
+
+
+</div>
+
+
+## Particle Scatterings as Quantum Computations
+
+<div style="text-align: justify">
+One immediate consequence of the qubit interpretation of the propagator is that any quantum interaction in particle physics has an associated quantum circuit. For example, the creation of a pair of virtual fermions from a free photon can be represented in two ways, as depicted by the figure below:
+
+![The plot thickens.](/img/plots/virtual_pair.webp)
+
+On the left, we have the typical Feynman diagramatic view, while on the right we have the quantum circuit analog.
+
+</div>
+
+
+
+

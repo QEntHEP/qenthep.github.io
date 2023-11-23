@@ -8,7 +8,7 @@ extra:
 ---
 
 ## Objectives
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 
 1. Quantum entanglement and fundamental constants: Investigate the possible of role of quantum entanglement in fixing the values of fundamental constants in high energy physics.
 
