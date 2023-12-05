@@ -26,7 +26,7 @@ $ yarn --version
 yarn
 ```
 
-3. Launch the development server and visit http://localhost:3000/
+3. Launch the development server and visit http://localhost:4321/
 
 ```console
 yarn dev

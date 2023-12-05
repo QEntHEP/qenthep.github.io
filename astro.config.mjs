@@ -24,7 +24,7 @@ export default defineConfig({
 		}),
 	],
 	experimental: {
-		assets: true,
+		// assets: true,
 	},
 	markdown: {
 		remarkPlugins: [remarkReadingTime, remarkMath, remarkEmoji],
