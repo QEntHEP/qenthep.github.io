@@ -19,15 +19,14 @@ export type PublicationsDataType = PublicationsListDataType[0];
 
 const postsCollection = defineCollection({
 	type: 'content',
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		pubDate: z.date(),
 		description: z.string(),
 		author: reference('people'),
-		image: z.object({
-			url: z.string(),
-			alt: z.string(),
-		}),
+		coverImage: image().refine((img) => img.width >= 1080, {
+			message: "Cover image must be at least 1080 pixels wide!",
+		  }).nullable(),
 		// category: z.enum(['Announcement', 'Teaching', 'Review', 'Other']),
 		// tags: z.array(z.string()).optional(),
 		extra: z.array(z.enum(['math', 'markmap', 'mermaid', 'gallery'])).optional(),

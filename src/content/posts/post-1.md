@@ -3,9 +3,7 @@ title: 'Constraining Fundamental Parameters with Quantum Entanglement'
 pubDate: 2022-07-07
 description: 'A principle of entanglement minimization is used to possibly explain the values of neutrino mixing parameters.'
 author: 'goncalo-quinta'
-image:
-    url: ''
-    alt: ''
+coverImage: null
 category: "Research"
 tags: ["quantum information"]
 extra: ["math"]

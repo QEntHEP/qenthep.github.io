@@ -2,6 +2,7 @@
 import { getEntry } from 'astro:content';
 
 import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 
 import BaseLayout from './BaseLayout.astro';
 import ShareLink from '../components/ShareLink.astro';
@@ -43,9 +44,13 @@ const author = await getEntry(frontmatter.author);
 			<p class="mt-6 text-xl leading-8 text-gray-700">
 				{frontmatter.description}
 			</p>
-			<div class="mt-6">
-				<img src={frontmatter.image.url} alt={frontmatter.image.alt} />
-			</div>
+			{
+				frontmatter.coverImage && (
+					<div class="mt-6">
+						<Image src={frontmatter.coverImage} alt="Cover image." />
+					</div>
+				)
+			}
 			<div class="mt-10 max-w-2xl">
 				<section class="prose prose-sky mx-auto my-8 max-w-screen-lg lg:prose-xl">
 					<slot />

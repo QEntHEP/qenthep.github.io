@@ -3,9 +3,7 @@ title: "The Qubits in Virtual Particles"
 pubDate: 2022-11-10
 description: "How virtual particles - the core of fundamental interactions - have a hidden qubit structure."
 author: goncalo-quinta
-image:
-  url: ""
-  alt: ""
+coverImage: null
 extra:
   - math
 draft: false
