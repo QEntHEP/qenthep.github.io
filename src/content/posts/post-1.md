@@ -60,7 +60,3 @@ $$ \sin(\delta^{\textrm{NO}}_{CP}) = 6.3^{+47.2}_{-61.7} \times 10^{-4}, \quad  
 depending on the so-called Normal Ordering (NO) or Inverted Ordering of the yet unkown neutrino masses.
 
 </div>
-
-
-
-

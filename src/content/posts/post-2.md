@@ -22,7 +22,7 @@ where $k^{\mu}$ is a momentum 4-vector and $M_k = \sqrt{k^2_0-k^2_1-k^2_2-k^2_3}
 
 ![](../../assets/plots/MollerScattering.webp)
 
-In this case it represents an electrodynamic scattering of two electrons. 
+In this case it represents an electrodynamic scattering of two electrons.
 
 </div>
 
@@ -62,7 +62,3 @@ One immediate consequence of the qubit interpretation of the propagator is that 
 On the left, we have the typical Feynman diagramatic view, while on the right we have the quantum circuit analog.
 
 </div>
-
-
-
-
