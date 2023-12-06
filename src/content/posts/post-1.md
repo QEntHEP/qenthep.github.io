@@ -10,10 +10,7 @@ extra: ["math"]
 ---
 
 
-
 ## Quantum Bits: The Fundamental Units of Quantum Information
-
-<div style="text-align: justify">
 
 At the core of quantum information lies the concept of quantum bits, or qubits. While classical bits can only exist in two states, 0 or 1, qubits can exist in a superposition of states. Mathematically, a qubit can be represented as:
 
@@ -23,13 +20,8 @@ Here, $|\psi\rangle$ represents the qubit state, $\alpha$ and $\beta$ are comple
 
 The superposition property allows qubits to represent multiple values simultaneously, leading to exponential parallelism in quantum computation. Additionally, qubits can be entangled, meaning their states become correlated, even when physically separated. Entanglement enables the encoding of information across multiple qubits, creating powerful quantum resources.
 
-</div>
-
-
 
 ## Entaglement in Neutrinos Flavours
-
-<div style="text-align: justify">
 
 Neutrinos, usually represente dby $\nu$, have a property called flavour: this is the value of a quantum operator which can assume 3 values. The special fact about neutrinos is that they can exist in a quantum superposition of all 3 flavours, of the form
 
@@ -40,12 +32,7 @@ where $\alpha$ represents the flavour of the neutrino. As any qubit quantum stat
 ![The plot thickens.](../../assets/plots/oscillations.webp)
 
 
-</div>
-
-
 ## Using entaglement to constrain fundamental parameter values
-
-<div style="text-align: justify">
 
 The $U$ represent a unitary matrix associated to rotations between flavours, containing particular fundamental constants. One of those constants is $\delta_{CP}$, a phase responsible for the amount of charge-parity violation within neutrino interactions.
 
@@ -58,5 +45,3 @@ As it turns out, flavour entanglement is minimised for a single point, giving th
 $$ \sin(\delta^{\textrm{NO}}_{CP}) = 6.3^{+47.2}_{-61.7} \times 10^{-4}, \quad  \sin(\delta^{\textrm{IO}}_{CP}) = -3.64^{+72.3}_{-36.0} \times 10^{-4}  $$
 
 depending on the so-called Normal Ordering (NO) or Inverted Ordering of the yet unkown neutrino masses.
-
-</div>
