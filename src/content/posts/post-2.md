@@ -20,7 +20,7 @@ $$ D_{F}(k) = \frac{1}{\sqrt{2M_k(k_0+M_k)}}\begin{pmatrix} k_0+M_k & 0 & k_3 & 
 
 where $k^{\mu}$ is a momentum 4-vector and $M_k = \sqrt{k^2_0-k^2_1-k^2_2-k^2_3}$ is called off-shell mass. The latter mass is associated to a so-called virtual particle, as is the propagator itself. The particle is called virtual since it's mass, given my $M_k$, doesn't follow the standard energy-momentum relation $E^2 = m^2 + k^4$ discovered by Einstein. A virtual particle is usally depicted by an internal line in a special type of diagram, called Feynman diagrams, like the one in the picture below:
 
-![](/img/plots/MollerScattering.webp)
+![](../../assets/plots/MollerScattering.webp)
 
 In this case it represents an electrodynamic scattering of two electrons. 
 
@@ -57,7 +57,7 @@ is the inverse temperature of the quantum state. In other words, virtual particl
 <div style="text-align: justify">
 One immediate consequence of the qubit interpretation of the propagator is that any quantum interaction in particle physics has an associated quantum circuit. For example, the creation of a pair of virtual fermions from a free photon can be represented in two ways, as depicted by the figure below:
 
-![The plot thickens.](/img/plots/virtual_pair.webp)
+![The plot thickens.](../../assets/plots/virtual_pair.webp)
 
 On the left, we have the typical Feynman diagramatic view, while on the right we have the quantum circuit analog.
 

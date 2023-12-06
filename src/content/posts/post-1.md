@@ -37,7 +37,7 @@ $$ \ket{\nu_\alpha(t)} = U_{\alpha e}(t) \ket{100} + U_{\alpha \mu}(t) \ket{010}
 
 where $\alpha$ represents the flavour of the neutrino. As any qubit quantum state, one may calculate the entanglement present in the qubit degrees of freedom. Due to the particular form of the operator $U$, the resulting entanglement is a oscillatory function, like the picture below:
 
-![The plot thickens.](/img/plots/oscillations.webp)
+![The plot thickens.](../../assets/plots/oscillations.webp)
 
 
 </div>
@@ -51,7 +51,7 @@ The $U$ represent a unitary matrix associated to rotations between flavours, con
 
 Currently, not only there's no explanattion for the value of $\delta_{CP}$ but it's experimental error is very large. It would be curious then, to somehow related the quantum entaglement of neutrinos flavour degrees of freedom to constrain the value of $\delta_{CP}$. In particular, interpreting quantum entanglement as a resource, it is tentative to look at points where it is minimised and determine the value of $\delta_{CP}$ at those points. The picture below represents such minisation:
 
-![The plot thickens.](/img/plots/zoomed_in.webp)
+![The plot thickens.](../../assets/plots/zoomed_in.webp)
 
 As it turns out, flavour entanglement is minimised for a single point, giving the specific prediction for the charge-parity violation phase of the form
 
