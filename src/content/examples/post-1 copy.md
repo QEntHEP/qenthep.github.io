@@ -3,9 +3,7 @@ title: 'Constraining Fundamental Parameters with Quantum Entanglement'
 pubDate: 2022-07-01
 description: 'A principle of entanglement minimization is used to possibly explain the values of neutirno mixing parameters.'
 author: 'goncalo-quinta'
-image:
-    url: '/img/plots/plot1a.webp'
-    alt: 'The plot thickens.'
+coverImage: '../../assets/plots/plot1a.webp'
 category: "Teaching"
 tags: ["quantum information"]
 extra: ["math"]
@@ -67,7 +65,7 @@ $$\displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a
 
 $$\displaystyle {1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots }= \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert<1.$$
 
-![The plot thickens.](../../assets/plot2a.webp)
+![The plot thickens.](../../assets/plots/plot2a.webp)
 <!-- <img src="../../assets/plot2a.webp" alt="The plot thickens." width="200"/> -->
 
 
