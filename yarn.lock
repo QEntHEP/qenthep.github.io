@@ -39,7 +39,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/alpinejs@npm:0.3.1":
+"@astrojs/alpinejs@npm:^0.3.1":
   version: 0.3.1
   resolution: "@astrojs/alpinejs@npm:0.3.1"
   peerDependencies:
@@ -70,30 +70,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@astrojs/markdown-remark@npm:4.0.0"
-  dependencies:
-    "@astrojs/prism": ^3.0.0
-    github-slugger: ^2.0.0
-    import-meta-resolve: ^4.0.0
-    mdast-util-definitions: ^6.0.0
-    rehype-raw: ^7.0.0
-    rehype-stringify: ^10.0.0
-    remark-gfm: ^4.0.0
-    remark-parse: ^11.0.0
-    remark-rehype: ^11.0.0
-    remark-smartypants: ^2.0.0
-    shikiji: ^0.6.13
-    unified: ^11.0.4
-    unist-util-visit: ^5.0.0
-    vfile: ^6.0.1
-  peerDependencies:
-    astro: ^4.0.0-beta.0
-  checksum: 513530e69874e6c97a9455a88300db60530b60d552ad61a4d9ed57102f2b9ec137f2b5a15c34904b1b290c8272a1d7d7686a3017b2fc29fc44334632f2a2a379
-  languageName: node
-  linkType: hard
-
 "@astrojs/markdown-remark@npm:4.0.1":
   version: 4.0.1
   resolution: "@astrojs/markdown-remark@npm:4.0.1"
@@ -116,11 +92,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/mdx@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@astrojs/mdx@npm:2.0.0"
+"@astrojs/mdx@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@astrojs/mdx@npm:2.0.2"
   dependencies:
-    "@astrojs/markdown-remark": 4.0.0
+    "@astrojs/markdown-remark": 4.0.1
     "@mdx-js/mdx": ^3.0.0
     acorn: ^8.11.2
     es-module-lexer: ^1.4.1
@@ -136,8 +112,8 @@ __metadata:
     unist-util-visit: ^5.0.0
     vfile: ^6.0.1
   peerDependencies:
-    astro: ^4.0.0-beta.0
-  checksum: 35885baf2642167b3aa713f1b70242cf6a0ed37b3cbfe9429ca2429f9c4e1a287c92a3357481e41a5e570461634211d0e2dcf8d6ab0cb34b973082e1f4379f0b
+    astro: ^4.0.0
+  checksum: a59bfc7751f038afd6bfa5e491840f798154f22248b3627e23626a90fe4f292dff992957897c9620518f3dff3b291fb60d4570ba51465c8571dda4f881b75000
   languageName: node
   linkType: hard
 
@@ -150,9 +126,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/tailwind@npm:5.0.3":
-  version: 5.0.3
-  resolution: "@astrojs/tailwind@npm:5.0.3"
+"@astrojs/tailwind@npm:^5.0.4":
+  version: 5.0.4
+  resolution: "@astrojs/tailwind@npm:5.0.4"
   dependencies:
     autoprefixer: ^10.4.15
     postcss: ^8.4.28
@@ -160,7 +136,7 @@ __metadata:
   peerDependencies:
     astro: ^3.0.0 || ^4.0.0
     tailwindcss: ^3.0.24
-  checksum: e4a704416417f8d95f811495ad194511e080de2ae26995a51b7a2e04b85f47070fba22e6732dc56fe73a652f0b29249f381b6b495d078973ab67eeb99b1d15c1
+  checksum: 28b5b4463232f780d59edd58a47a16acf44eedb363b5aad78be93b45beac231155f6385b1b24cdd13d8a8af2eeae7bbfc32f616ffe5fc9367876e770a7d739eb
   languageName: node
   linkType: hard
 
@@ -974,12 +950,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/alpinejs@npm:^3.7.2":
-  version: 3.7.2
-  resolution: "@types/alpinejs@npm:3.7.2"
-  dependencies:
-    "@vue/reactivity": ^3.2.26
-  checksum: 6f1b97863f720da808db15eef08134109f548de62309f22f3047c3927ffcf7079570bf5570e292b5473e2a6e3cca56fc21fdac24217999cfe50648298ef9ee9f
+"@types/alpinejs@npm:^3.13.5":
+  version: 3.13.5
+  resolution: "@types/alpinejs@npm:3.13.5"
+  checksum: e09649da53b41d9c868b8c7e064f776eb5131f4dd1f0142b6aeaeb8137731b125b2557652b86129888a90c66650b6fa008c011c717be6c89c8cdfd5df89d2c15
   languageName: node
   linkType: hard
 
@@ -1162,15 +1136,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/reactivity@npm:^3.2.26":
-  version: 3.3.4
-  resolution: "@vue/reactivity@npm:3.3.4"
-  dependencies:
-    "@vue/shared": 3.3.4
-  checksum: 81c3d0c587d23656a57a7a31afb51357274f6512b51baffc67cda183b2361a7e65e646029c26a8bc28587f26b65bba808dcd93cdd3bacab48d2b99d11ad0ec97
-  languageName: node
-  linkType: hard
-
 "@vue/reactivity@npm:~3.1.1":
   version: 3.1.5
   resolution: "@vue/reactivity@npm:3.1.5"
@@ -1184,13 +1149,6 @@ __metadata:
   version: 3.1.5
   resolution: "@vue/shared@npm:3.1.5"
   checksum: a34b942e1aeed5d2b0fe887d0804061d2e799ef9a0d641aaae368c6fa9e2bf311e415f02883f26963bd35d90cac165433cfe74360f7ee88304fccaa144422d83
-  languageName: node
-  linkType: hard
-
-"@vue/shared@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/shared@npm:3.3.4"
-  checksum: 12fe53ff816bfa29ea53f89212067a86512c626b8d30149ff28b36705820f6150e1fb4e4e46897ad9eddb1d1cfc02d8941053939910eed69a905f7a5509baabe
   languageName: node
   linkType: hard
 
@@ -1258,12 +1216,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"alpinejs@npm:^3.12.3":
-  version: 3.12.3
-  resolution: "alpinejs@npm:3.12.3"
+"alpinejs@npm:^3.13.3":
+  version: 3.13.3
+  resolution: "alpinejs@npm:3.13.3"
   dependencies:
     "@vue/reactivity": ~3.1.1
-  checksum: 761649ffc0710567be28a520b67f42b58a2b765d70271cd7fa5884411b0c774fde74c43e8065c97b0069bb03fe7c6cd076a9ce91afeef36d6931eef4414f6530
+  checksum: 5be6d62b02ee2888a64a7b6b5bb4fd6730a90931f7454cbb677c809421cf49288f93326520882b63f177b95250e1661c7098b923bb67d4bcb2741140a9373145
   languageName: node
   linkType: hard
 
@@ -2586,20 +2544,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.12":
-  version: 3.3.0
-  resolution: "fast-glob@npm:3.3.0"
-  dependencies:
-    "@nodelib/fs.stat": ^2.0.2
-    "@nodelib/fs.walk": ^1.2.3
-    glob-parent: ^5.1.2
-    merge2: ^1.3.0
-    micromatch: ^4.0.4
-  checksum: 20df62be28eb5426fe8e40e0d05601a63b1daceb7c3d87534afcad91bdcf1e4b1743cf2d5247d6e225b120b46df0b9053a032b2691ba34ee121e033acd81f547
-  languageName: node
-  linkType: hard
-
-"fast-glob@npm:^3.3.2":
+"fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.2":
   version: 3.3.2
   resolution: "fast-glob@npm:3.3.2"
   dependencies:
@@ -3548,12 +3493,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:^1.18.2":
-  version: 1.18.2
-  resolution: "jiti@npm:1.18.2"
+"jiti@npm:^1.19.1":
+  version: 1.21.0
+  resolution: "jiti@npm:1.21.0"
   bin:
     jiti: bin/jiti.js
-  checksum: 46c41cd82d01c6efdee3fc0ae9b3e86ed37457192d6366f19157d863d64961b07982ab04e9d5879576a1af99cc4d132b0b73b336094f86a5ce9fb1029ec2d29f
+  checksum: a7bd5d63921c170eaec91eecd686388181c7828e1fa0657ab374b9372bfc1f383cf4b039e6b272383d5cb25607509880af814a39abdff967322459cca41f2961
   languageName: node
   linkType: hard
 
@@ -5924,15 +5869,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@astrojs/alpinejs": 0.3.1
-    "@astrojs/mdx": 2.0.0
-    "@astrojs/tailwind": 5.0.3
+    "@astrojs/alpinejs": ^0.3.1
+    "@astrojs/mdx": ^2.0.2
+    "@astrojs/tailwind": ^5.0.4
     "@iconify-json/academicons": ^1.1.10
     "@iconify-json/heroicons": ^1.1.11
     "@iconify-json/logos": ^1.1.33
     "@tailwindcss/typography": ^0.5.9
-    "@types/alpinejs": ^3.7.2
-    alpinejs: ^3.12.3
+    "@types/alpinejs": ^3.13.5
+    alpinejs: ^3.13.3
     astro: ^4.0.7
     astro-icon: next
     mdast-util-to-string: ^4.0.0
@@ -5943,7 +5888,7 @@ __metadata:
     rehype-katex: ^7.0.0
     remark-emoji: ^3.1.2
     remark-math: ^6.0.0
-    tailwindcss: ^3.3.3
+    tailwindcss: ^3.4.0
     typescript: ^5.1.6
   languageName: unknown
   linkType: soft
@@ -6432,19 +6377,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "tailwindcss@npm:3.3.3"
+"tailwindcss@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "tailwindcss@npm:3.4.0"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
     chokidar: ^3.5.3
     didyoumean: ^1.2.2
     dlv: ^1.1.3
-    fast-glob: ^3.2.12
+    fast-glob: ^3.3.0
     glob-parent: ^6.0.2
     is-glob: ^4.0.3
-    jiti: ^1.18.2
+    jiti: ^1.19.1
     lilconfig: ^2.1.0
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
@@ -6461,7 +6406,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 0195c7a3ebb0de5e391d2a883d777c78a4749f0c532d204ee8aea9129f2ed8e701d8c0c276aa5f7338d07176a3c2a7682c1d0ab9c8a6c2abe6d9325c2954eb50
+  checksum: d7f05beb1cf98d169b9b65ef674a82dd16c97757194f9bacee4c536cf74f3852e0008a74f7af8578f4a1e9639fac262fd8ef89efe3e6e06667243640422f9462
   languageName: node
   linkType: hard
 

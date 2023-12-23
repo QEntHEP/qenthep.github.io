@@ -32,6 +32,11 @@ yarn
 yarn dev
 ```
 
+### Upgrade Astro and official integrations together
+```console
+yarn dlx @astrojs/upgrade
+```
+
 
 ## ⏳ Roadmap
 
