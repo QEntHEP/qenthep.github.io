@@ -930,6 +930,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@skarab/detect-package-manager@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@skarab/detect-package-manager@npm:1.0.0"
+  checksum: 39716b978e097819827ef3120c50da1125626481c049ebfb6dba8ba2f051e4c7180c97aee73906ca2229565d7a32f7467a899bf248dcad0e82112c65f1b5b942
+  languageName: node
+  linkType: hard
+
 "@tailwindcss/typography@npm:^0.5.9":
   version: 0.5.9
   resolution: "@tailwindcss/typography@npm:0.5.9"
@@ -1381,14 +1388,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-icon@npm:^1.0.0-next.2":
-  version: 1.0.0-next.2
-  resolution: "astro-icon@npm:1.0.0-next.2"
+"astro-icon@npm:next":
+  version: 1.0.0-next.4
+  resolution: "astro-icon@npm:1.0.0-next.4"
   dependencies:
     "@iconify/tools": ^3.0.1
     "@iconify/types": ^2.0.0
     "@iconify/utils": ^2.1.5
-  checksum: 137ff2a286abc8cbe17d8c2f30be49a5ee74d7c693b40b38894a55b10f2c75f112b9b567b10832cf30ee0b16440c91b30e44d7f72d275b067ee1bfa6d2fb502f
+    "@skarab/detect-package-manager": ^1.0.0
+  checksum: 6c152c721dd21d2d72e94ad82ba74317479861d789c800730017e307d86f57a35c29d4f1877cb4c7e1de107f3fa1435f21d0565d1bd6ab4302a8c6c5396e2920
   languageName: node
   linkType: hard
 
@@ -5926,7 +5934,7 @@ __metadata:
     "@types/alpinejs": ^3.7.2
     alpinejs: ^3.12.3
     astro: ^4.0.7
-    astro-icon: ^1.0.0-next.2
+    astro-icon: next
     mdast-util-to-string: ^4.0.0
     prettier: <3.0.0
     prettier-plugin-astro: ^0.11.0
