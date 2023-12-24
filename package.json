@@ -19,10 +19,10 @@
   },
   "devDependencies": {
     "@iconify-json/academicons": "^1.1.10",
-    "@iconify-json/heroicons": "^1.1.11",
+    "@iconify-json/heroicons": "^1.1.19",
     "@iconify-json/logos": "^1.1.33",
     "@tailwindcss/typography": "^0.5.9",
-    "astro-icon": "next",
+    "astro-icon": "1.0.0-next.2",
     "mdast-util-to-string": "^4.0.0",
     "prettier": "<3.0.0",
     "prettier-plugin-astro": "^0.11.0",
