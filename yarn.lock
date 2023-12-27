@@ -619,12 +619,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/academicons@npm:^1.1.10":
-  version: 1.1.10
-  resolution: "@iconify-json/academicons@npm:1.1.10"
+"@iconify-json/academicons@npm:^1.1.14":
+  version: 1.1.14
+  resolution: "@iconify-json/academicons@npm:1.1.14"
   dependencies:
     "@iconify/types": "*"
-  checksum: 31aa6a241af722b464c4870f62c2dd8450b486c0bbb3384b44e75100a67b6a61f3e813eb8e02e939c3a8a6c299915f90d73f4b1c58f8c5ccfa783741e60ad512
+  checksum: ba56b1667a1f3c5d19e7039f8ba47cd5f42f93c40e6ce498caaae6492854d9b4a769b44a1099fe1de1362ca2d36804a0f005be2bf28ebeb149b3f7068123cd22
   languageName: node
   linkType: hard
 
@@ -637,12 +637,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/logos@npm:^1.1.33":
-  version: 1.1.33
-  resolution: "@iconify-json/logos@npm:1.1.33"
+"@iconify-json/logos@npm:^1.1.42":
+  version: 1.1.42
+  resolution: "@iconify-json/logos@npm:1.1.42"
   dependencies:
     "@iconify/types": "*"
-  checksum: 33bb20f8ff08115edb68c74b82ce3207f263f2af5906f1cea47774193994997c19a62617380dcb7f1a5e0cb3fd28529e30e638a543739f26a2d6701894cba210
+  checksum: 53410032c2c1ec11f96890b792afda2d4d30d83b91e0633f7c8fc80c0229ca2b3e33813b63f6d8069e1c49941714fce9707daa56a03369e002dacb3474f1080c
   languageName: node
   linkType: hard
 
@@ -1339,14 +1339,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-icon@npm:1.0.0-next.2":
-  version: 1.0.0-next.2
-  resolution: "astro-icon@npm:1.0.0-next.2"
+"astro-icon@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "astro-icon@npm:1.0.1"
   dependencies:
     "@iconify/tools": ^3.0.1
     "@iconify/types": ^2.0.0
     "@iconify/utils": ^2.1.5
-  checksum: 137ff2a286abc8cbe17d8c2f30be49a5ee74d7c693b40b38894a55b10f2c75f112b9b567b10832cf30ee0b16440c91b30e44d7f72d275b067ee1bfa6d2fb502f
+  checksum: 788fd818bf76ba4a61370868d6c80d0f856a85b5edbccdd6066f12a8b430680af52d5e551479c0e0cc8c27f23f1c700c163325c69104f9583f643d0447ecdfb1
   languageName: node
   linkType: hard
 
@@ -5864,14 +5864,14 @@ __metadata:
     "@astrojs/alpinejs": ^0.3.1
     "@astrojs/mdx": ^2.0.2
     "@astrojs/tailwind": ^5.0.4
-    "@iconify-json/academicons": ^1.1.10
+    "@iconify-json/academicons": ^1.1.14
     "@iconify-json/heroicons": ^1.1.19
-    "@iconify-json/logos": ^1.1.33
+    "@iconify-json/logos": ^1.1.42
     "@tailwindcss/typography": ^0.5.9
     "@types/alpinejs": ^3.13.5
     alpinejs: ^3.13.3
     astro: ^4.0.7
-    astro-icon: 1.0.0-next.2
+    astro-icon: ^1.0.1
     mdast-util-to-string: ^4.0.0
     prettier: <3.0.0
     prettier-plugin-astro: ^0.11.0
