@@ -1,5 +1,12 @@
 publications:
 
+  - title: Vacuum Energy from Qubit Entropy
+    authors: Gonçalo M. Quinta, Antonino Flachi
+    year: 2023
+    selected: true
+    arxiv: https://arxiv.org/abs/2312.17317
+    abstract: We develop a non-conventional description of the vacuum energy in quantum field theory in terms of quantum entropy. Precisely, we show that the vacuum energy of any non-interacting quantum field at zero temperature is proportional to the quantum entropy of the qubit degrees of freedom associated with virtual fluctuations. We prove this for fermions first, and then extend the derivation to quanta of any spin. Finally, we use these results to obtain the first law of thermodynamics for a non-interacting quantum vacuum at zero temperature.
+    
   - title: Multipartite Entanglement from Consecutive Scatterings
     authors: Gonçalo M. Quinta, Rui André
     year: 2023
