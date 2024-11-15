@@ -11,6 +11,7 @@ publications:
     authors: Gonçalo M. Quinta, Rui André
     year: 2023
     selected: false
+    doi: 'https://doi.org/10.1103/PhysRevA.109.022433'
     arxiv: https://arxiv.org/abs/2311.11102
     abstract: We study how the successive scattering of spin 1/2 particles with a central spin 1/2 target particle can generate entanglement between the helicity degrees of freedom of all scattered particles, effectively producing a multipartite entangled state. We show that the bipartite entanglement between each pair of scattered particles, as quantified by the concurrence, is largest for reflected particles and decreases with the number of scatterings. We study the entanglement generation as a function of the scattered particles momenta, angular distribution and mass ratios, and show that there is always a combination of optimal helicities and momentum which generate the largest amount of bipartite entanglement.
 
