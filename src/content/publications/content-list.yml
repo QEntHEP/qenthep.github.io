@@ -1,0 +1,24 @@
+publications:
+
+  - title: Multipartite Entanglement from Consecutive Scatterings
+    authors: Gonçalo M. Quinta, Rui André
+    year: 2023
+    selected: false
+    arxiv: https://arxiv.org/abs/2311.11102
+    abstract: We study how the successive scattering of spin 1/2 particles with a central spin 1/2 target particle can generate entanglement between the helicity degrees of freedom of all scattered particles, effectively producing a multipartite entangled state. We show that the bipartite entanglement between each pair of scattered particles, as quantified by the concurrence, is largest for reflected particles and decreases with the number of scatterings. We study the entanglement generation as a function of the scattered particles momenta, angular distribution and mass ratios, and show that there is always a combination of optimal helicities and momentum which generate the largest amount of bipartite entanglement.
+
+  - title: The Qubit Picture of Virtual Particles
+    authors: Gonçalo M. Quinta
+    year: 2022
+    selected: false
+    doi: 'https://doi.org/10.1103/PhysRevA.108.012424'
+    arxiv: https://arxiv.org/abs/2211.05782
+    abstract: We show that a virtual fermion, despite being unobservable, can be described by a quantum state in momentum space under certain conditions. We prove that such a state can be regarded as a 2-qubit mixed state, where the qubits are physically associated to particle type and spin. We show that the mixed state is a separable combination of entangled pure states, whose entanglement is proportional to the transverse momentum norm. Lastly, we show that this state is always thermal. These findings represent a new connection between quantum field theory, quantum information and quantum thermodynamics.
+
+  - title: Predicting leptonic CP violation via minimization of neutrino entanglement
+    authors: Gonçalo M. Quinta, Alexandre Sousa, Yasser Omar
+    year: 2022
+    selected: true
+    arxiv: https://arxiv.org/abs/2207.03303
+    abstract: We show how a minimization principle of quantum entanglement between the oscillating flavors of a neutrino leads to a unique prediction for the CP-violation phase in the neutrino sector without assuming extra symmetries in the Standard Model. We find a theoretical prediction consistent with either no CP-violation or a very small presence of it.
+

@@ -1,0 +1,63 @@
+---
+import { getEntry } from 'astro:content';
+
+import { Icon } from 'astro-icon/components';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationsList from '../components/PublicationsList.astro';
+import type { PublicationsListDataType, PublicationsDataType } from '../content/config';
+
+const contentList = await getEntry('publications', 'content-list');
+const publications = contentList.data.publications;
+
+const publicationsByYear = publications.reduce<Record<number, PublicationsListDataType>>(
+	(group, publication) => {
+		group[publication.year] = [...(group[publication.year] || []), publication];
+		return group;
+	},
+	{} as PublicationsDataType
+);
+---
+
+<BaseLayout title="Publications">
+	<div class="bg-white py-6 sm:py-8">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
+			<div class="mx-auto lg:mx-0">
+				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Publications</h2>
+			</div>
+			{
+				Object.keys(publicationsByYear)
+					.sort()
+					.reverse()
+					.map((year) => (
+						<>
+							<details class="group mt-12 open:mb-24" open>
+								<summary class="pointer-events-none select-none list-none">
+									<div class="relative">
+										<div class="absolute inset-0 flex items-center" aria-hidden="true">
+											<div class="w-full border-t border-sky-800" />
+										</div>
+										<div class="relative flex items-center justify-between">
+											<span class=" border-sky-800 bg-sky-800 px-4 py-2 text-base font-semibold leading-6 text-white shadow-lg">
+												{year}
+											</span>
+											<span class="pointer-events-auto inline-flex cursor-pointer items-center gap-x-1.5 rounded-full bg-white px-1.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-sky-800 transition duration-200 ease-in-out hover:bg-gray-50 group-open:rotate-180">
+												<Icon
+													name="heroicons:chevron-down-20-solid"
+													class="h-5 w-5 text-gray-400"
+												/>
+											</span>
+										</div>
+									</div>
+								</summary>
+								<PublicationsList
+									publications={publicationsByYear[parseInt(year)] as PublicationsListDataType}
+									decorations={true}
+								/>
+							</details>
+						</>
+					))
+			}
+		</div>
+	</div>
+</BaseLayout>
